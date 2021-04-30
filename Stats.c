@@ -15,11 +15,8 @@
 #include <stdio.h>
 #include "stats.h"
 
-/* Size of the Data Set *////////////////////////////////
 #define SIZE (40)
-
-/* main() *///////////////////////////////////
-
+/* main() - The main entry point for your program */
 void main() {
    unsigned char array[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                                114, 88,   45,  76, 123,  87,  25,  23,
@@ -30,7 +27,6 @@ void main() {
   unsigned char sorted_array[SIZE];
   int maximum = 0, minimum = 0, median = 0, mean = 0;
   
-  printf("Embedded Software HW1 \n");
   printf("Unsorted array \n");
   print_array(array);
   sort_array(array);
